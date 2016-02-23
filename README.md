@@ -160,8 +160,8 @@ end
 
 ## Step 6: Extra Credit
 
-<ul>
-<% @user.errors.full_messages.each do |msg| %>
-<li><%= msg %></li>
-<% end %>
-</ul>
+    <ul>
+    	<% @user.errors.full_messages.each do |msg| %>
+    		<li><%= msg %></li>
+    	<% end %>
+    </ul>
