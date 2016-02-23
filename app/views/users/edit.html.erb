@@ -1,0 +1,11 @@
+<h1>Edit a User</h1>
+
+<%= form_for(@user) do |f| %>
+
+	<%= render 'fields', f: f %>
+
+	<%=  button_tag(type: 'submit', class: 'btn btn-primary') do %>
+		 Submit
+	<% end %>
+
+<% end %>

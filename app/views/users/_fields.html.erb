@@ -1,0 +1,20 @@
+<ul>
+	<% @user.errors.full_messages.each do |msg| %>
+		<li><%= msg %></li>
+	<% end %>
+</ul>
+
+<div class="form-group">
+	<%= f.label :username, 'Your Username' %>
+	<%= f.text_field :username, class: 'form-control', placeholder: "Username" %>
+</div>
+
+<div class="form-group">
+	<%= f.label :email, 'Your Email' %>
+	<%= f.text_field :email, class: 'form-control', placeholder: "Email Address" %>
+</div>
+
+<div class="form-group">
+	<%= f.label :password, 'Pick a strong Password' %>
+	<%= f.password_field :password, class: 'form-control', placeholder: "Password" %>
+</div>
