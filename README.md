@@ -52,11 +52,11 @@ These projects will give you a chance to actually build some forms, both using n
 
 - ActionController::InvalidAuthenticityToken
 
-### Add the authenticity token helper:
+### Add the authenticity token helper
 
-- <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
 
-###  Try to submit the data, and you will get ...
+###  Try to submit the data, and you will get
 
 - template is missing error
 
